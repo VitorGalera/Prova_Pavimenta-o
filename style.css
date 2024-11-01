@@ -1,59 +1,106 @@
-/* Estilos gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin-bottom: 0.5rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  .intro {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
+/* Configuração da paleta de cores */
+body {
+  background-color: #F5F5DC; /* Bege suave para o fundo */
+  color: #000000; /* Preto para o texto principal */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 18px; /* Aumenta o tamanho do texto */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2C3E50; /* Azul-marinho */
+  color: #FFFFFF; /* Branco para o texto do cabeçalho */
+  padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1em;
+}
+
+nav ul li a {
+  color: #FFFFFF; /* Branco para os links do cabeçalho */
+  text-decoration: none;
+}
+
+main {
+  padding: 1em;
+}
+
+h2 {
+  color: #2C3E50; /* Azul-marinho para os subtítulos */
+  font-size: 1.5em;
+}
+
+section p {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #2C3E50; /* Azul-marinho */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #FFFFFF; /* Fundo branco para o formulário */
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #2C3E50;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #2C3E50; /* Azul-marinho */
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  background-color: #2C3E50; /* Azul-marinho */
+  color: #FFFFFF;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button[type="submit"]:hover {
+  background-color: #1A2530; /* Tom mais escuro de azul-marinho */
+}
+
+.intro img,
+section img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 1em auto;
+  border-radius: 8px;
+}
