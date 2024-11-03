@@ -1,4 +1,4 @@
-/* Configuração da paleta de cores */
+/* Configuração da paleta de cores e estilo geral */
 body {
   background-color: #F5F5DC; /* Bege suave para o fundo */
   color: #000000; /* Preto para o texto principal */
@@ -33,6 +33,7 @@ nav ul li {
 nav ul li a {
   color: #FFFFFF; /* Branco para os links do cabeçalho */
   text-decoration: none;
+  font-size: 1em;
 }
 
 main {
@@ -46,6 +47,7 @@ h2 {
 
 section p {
   margin-bottom: 1em;
+  font-size: 1.1em;
 }
 
 footer {
@@ -56,11 +58,12 @@ footer {
   font-size: 0.9em;
 }
 
+/* Formulário de Contato */
 form {
   max-width: 600px;
   margin: 0 auto;
   background-color: #FFFFFF; /* Fundo branco para o formulário */
-  padding: 1em;
+  padding: 1.5em; /* Aumentando o padding para melhor espaçamento */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -69,17 +72,24 @@ label {
   display: block;
   margin-bottom: 0.5em;
   color: #2C3E50;
+  font-size: 1em;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.6em; /* Reduzindo o padding para ajustar melhor o tamanho */
   margin-bottom: 1em;
   border: 1px solid #2C3E50; /* Azul-marinho */
   border-radius: 4px;
   font-size: 1em;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px; /* Limite de altura para o campo de mensagem */
+  resize: vertical; /* Permitir redimensionamento apenas verticalmente */
 }
 
 button[type="submit"] {
@@ -96,6 +106,7 @@ button[type="submit"]:hover {
   background-color: #1A2530; /* Tom mais escuro de azul-marinho */
 }
 
+/* Estilo para imagens */
 .intro img,
 section img {
   width: 100%;
